@@ -2,13 +2,19 @@ import { useState } from "react";
 import data from "../../assets/transactionData";
 
 const Transactions = () => {
-  const [view, setView] = useState(8);
+  const [view, setView] = useState(7);
   return (
     <div
-      className="md:border border-white rounded-lg p-4 overflow-x-auto min-w-0 max-h-[90vh] flex flex-col"
+      className="md:border border-white/70 rounded-lg p-4 overflow-x-auto min-w-0 max-h-[90vh] flex flex-col"
       style={{ scrollbarWidth: "none" }}
     >
-      <div className="overflow-y-scroll" style={{ scrollbarWidth: "thin", scrollbarColor: "rgba(255, 255, 255, 0.5) transparent" }}>
+      <div
+        className="overflow-y-scroll"
+        style={{
+          scrollbarWidth: "thin",
+          scrollbarColor: "rgba(255, 255, 255, 0.5) transparent",
+        }}
+      >
         {/* Header Row */}
         <div className="text-xs grid grid-cols-6 md:grid-cols-8 gap-5 mb-5 px-2">
           <div className="">Date</div>
@@ -27,7 +33,7 @@ const Transactions = () => {
             data.slice(0, view).map((item, id) => (
               <div
                 key={id}
-                className="grid grid-cols-6 md:grid-cols-8 gap-5 md:border border-white/60 py-4 pr-9 md:pr-2 px-2 rounded-full my-0 md:my-1 font-normal text-[0.6rem] text-white/70"
+                className="grid grid-cols-6 md:grid-cols-8 gap-5 md:border border-white/40 py-4 pr-9 md:pr-2 px-2 rounded-full my-0 md:my-1 font-normal text-[0.6rem] text-white/70"
               >
                 <div>{item.date}</div>
                 <div>{item.id}</div>
@@ -44,19 +50,24 @@ const Transactions = () => {
                         ? "bg-gradient-to-b from-[#FD749B] to-[#580A98]"
                         : ""
                     }
-                    p-1 w-16 text-center rounded-full font-bold
+                    p-1 w-16 cursor-pointer text-center rounded-full font-bold
                   `}
                 >
                   {item.status}
                 </div>
-                <div className="hidden md:block font-bold text-center">...</div>
+                <div className="hidden md:block font-bold text-center cursor-pointer">
+                  ...
+                </div>
               </div>
             ))}
         </div>
       </div>
 
       <div className="w-full pt-4 flex">
-        <button className=" mx-auto bg-gradient-to-b from-[#FD749B] to-[#580A98] font-normal text-[0.55rem] rounded-full px-4 py-2 cursor-pointer" onClick={() => setView(view + 5)}>
+        <button
+          className=" mx-auto bg-gradient-to-b from-[#FD749B] to-[#580A98] font-normal text-[0.55rem] rounded-full px-4 py-2 cursor-pointer hover:from-[#580A98] hover:to-[#FD749B] transition ease duration-300 hover:scale-110"
+          onClick={() => setView(view + 5)}
+        >
           View more
         </button>
       </div>
