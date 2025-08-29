@@ -4,7 +4,7 @@ export default function Sample(){
 
 
     return(
-        <div>
+        <div className="text-4xl flex items-center justify-center h-screen">
             Sample
         </div>
     )

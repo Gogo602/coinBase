@@ -1,10 +1,13 @@
-
+import { Route, Routes } from "react-router-dom"
+import Sample from './pages/user/Sample'
 function App() {
 
   return (
-    <>
-        <div className="text-4xl text-center">Welcome to CoinBase</div>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Sample/>} />
+      </Routes>
+    </div>
   )
 }
 
