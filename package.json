@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
+    "country-flag-icons": "^1.5.19",
     "immer": "^10.1.1",
+    "lucide-react": "^0.542.0",
     "middleware": "^1.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
