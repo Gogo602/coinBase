@@ -1,13 +1,12 @@
-
+import { BrowserRouter } from "react-router-dom";
+import Layout from "./layouts/Layout";
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <div className="min-h-screen bg-[#1E0338] flex justify-center items-center">
-        <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold">
-          Welcome to Coin base
-        </h1>
+        <Layout />
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 

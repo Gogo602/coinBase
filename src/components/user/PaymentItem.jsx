@@ -5,7 +5,7 @@ const PaymentItem = ({ item: { item, id } }) => {
   return (
     <div
       key={id}
-      className="relative grid grid-cols-6 md:grid-cols-7 gap-5 md:border border-white/40 py-4 pr-9 md:pr-2 px-2 rounded-full my-0 md:my-1 font-normal text-[0.6rem] text-white/70"
+      className="relative grid grid-cols-6 md:grid-cols-7 gap-5 md:border border-white/40 py-3 pr-9 md:pr-2 px-2 rounded-full my-0 md:my-2 md:mx-1 font-normal text-[0.6rem] text-white/70"
     >
       <div>{item.id}</div>
       <div>{item.type}</div>
