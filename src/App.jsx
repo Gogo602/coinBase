@@ -1,8 +1,8 @@
 import Cards from "./components/admin/Card";
 function App() {
   return (
-    <section className="mt-4">
-      <div className="container mx-auto px-4">
+    <section className="">
+      <div className="">
           <Cards />
       </div>
     </section>

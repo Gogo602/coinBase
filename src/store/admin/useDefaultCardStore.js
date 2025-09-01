@@ -52,6 +52,10 @@ export const defaultCards = [
     textColor: "text-black"
   },
 
+  
+
+  
+
   {
     id: 6,
     country: "UK",
@@ -66,7 +70,7 @@ export const defaultCards = [
     country: "US",
     title: "Other Cards",
     icon: GiftCard,
-    bg: "gift",
+    bg: "bg-white",
     textColor: "text-black"
   },
 
