@@ -3,7 +3,7 @@ import assets from "../../assets/assets";
 
 const Wallet = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 text-white">
       <h1 className="mb-4 font-semibold text-lg">Wallet</h1>
       <div className="border border-white rounded-lg p-8 mt-10">
         <div className="flex justify-between mb-15">

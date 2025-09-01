@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Payments from "../components/user/Payments";
 import Transactions from "../components/user/Transactions";
+import Wallet from "../components/user/Wallet";
 
-const Routes = ({ children }) => {
+const Routess = ({ children }) => {
   return (
       <Routes>
         <Route path="/overview" element={<div>Overview</div>} />
@@ -12,9 +13,10 @@ const Routes = ({ children }) => {
         <Route path="/bitcoin" element={<div>Bitcoin and Etherum</div>} />
         <Route path="/payments" element={<Payments />} />
         <Route path="/transactions" element={<Transactions />} />
+        <Route path="/wallet" element={<Wallet />} />
         <Route path="/statistics" element={<div>Statistics</div>} />
       </Routes>
   );
 };
 
-export default Routes;
+export default Routess;

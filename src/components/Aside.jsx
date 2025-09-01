@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Aside = ({ side }) => {
   return (
     <div
@@ -9,8 +11,12 @@ const Aside = ({ side }) => {
         { title: "Overview", icon: "overview-icon", link: "/overview" },
         { title: "Settings", icon: "settings-icon", link: "/settings" },
         { title: "Profile", icon: "profile-icon", link: "/profile" },
+        { title: "Payments", icon: "profile-icon", link: "/payments" },
+        { title: "Transactions", icon: "profile-icon", link: "/transactions" },
+        { title: "Wallet", icon: "profile-icon", link: "/wallet" },
       ].map((item, index) => (
-        <div
+        <Link
+        to={item.link}
           key={index}
           className="flex items-center space-x-3 mb-6 cursor-pointer hover:text-white text-white/70"
         >
@@ -20,7 +26,7 @@ const Aside = ({ side }) => {
             <span className="text-sm"></span>
           </div>
           <span className="">{item.title}</span>
-        </div>
+        </Link>
       ))}
     </div>
   );

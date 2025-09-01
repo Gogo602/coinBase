@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Nav from "../components/Nav";
 import Aside from "../components/Aside";
-import Transactions from "../components/user/Transactions";
+import Routess from "../routes/routes";
 
 const Layout = () => {
   const [side, OpenSide] = useState(true);
@@ -15,7 +15,7 @@ const Layout = () => {
         <Aside side={side} />
         <div className="p-10 overflow-y-scroll w-full" style={{scrollbarWidth: 'none'}}>
           {/* Main content area can be added here */}
-          <Transactions />
+          <Routess />
         </div>
       </div>
     </div>
