@@ -1,12 +1,18 @@
 // Default data for cards to always display
-import { Amazon, Itunes, GooglePlay, Steam, OtherCard } from "../../assets/cardIcon";
+import Amazon from "../../assets/Amazon.svg";
+import GiftCard from "../../assets/GiftCard.svg";
+import GooglePlay from "../../assets/GooglePlay.svg";
+import Steam from "../../assets/Steam.svg";
+import Itunes from "../../assets/Itunes.svg";
+
+
 export const defaultCards = [
   {
     id: 1,
     country: "US",
     title: "Amazon Card",
     icon: Amazon,
-    bg: "bg-gradient-to-br from-blue-500 to-blue-600",
+    bg: "bg-[linear-gradient(146deg,#00E0FF_9.67%,#0047FF_107.49%)]",
     textColor: "text-white",
   },
 
@@ -15,7 +21,7 @@ export const defaultCards = [
     country: "CA",
     title: "iTunes Card",
     icon: Itunes,
-    bg: "bg-gradient-to-br from-pink-400 to-purple-500",
+    bg: "bg-[linear-gradient(142deg,#FF5E50_17.14%,#FE5C6C_33.69%,#E3658A_42.16%,#B87EB0_50.17%,#916CFF_58.79%,rgba(112,188,251,0.92)_67.83%,#21C7FE_83.6%)]",
     textColor: "text-white"
   },
 
@@ -33,7 +39,7 @@ export const defaultCards = [
     country: "US",
     title: "Steam Card",
     icon: Steam,
-    bg: "bg-gradient-to-br from-pink-400 to-orange-400",
+    bg: "bg-[linear-gradient(144deg,#FC58B3_11.61%,#FEAE68_100%)]",
     textColor: "text-white"
   },
 
@@ -41,7 +47,7 @@ export const defaultCards = [
     id: 5,
     country: "UK",
     title: "Other Cards",
-    icon: OtherCard,
+    icon: GiftCard,
     bg: "bg-white",
     textColor: "text-black"
   },
@@ -51,7 +57,7 @@ export const defaultCards = [
     country: "UK",
     title: "Steam Card",
     icon: Steam,
-    bg: "bg-gradient-to-br from-pink-400 to-orange-400",
+    bg: "bg-[linear-gradient(144deg,#FC58B3_11.61%,#FEAE68_100%)]",
     textColor: "text-white"
   },
 
@@ -59,7 +65,7 @@ export const defaultCards = [
     id: 7,
     country: "US",
     title: "Other Cards",
-    icon: OtherCard,
+    icon: GiftCard,
     bg: "gift",
     textColor: "text-black"
   },
@@ -69,7 +75,7 @@ export const defaultCards = [
     country: "US",
     title: "iTunes Card",
     icon: Itunes,
-    bg: "bg-gradient-to-br from-pink-400 to-purple-500",
+    bg: "bg-[linear-gradient(142deg,#FF5E50_17.14%,#FE5C6C_33.69%,#E3658A_42.16%,#B87EB0_50.17%,#916CFF_58.79%,rgba(112,188,251,0.92)_67.83%,#21C7FE_83.6%)]",
     textColor: "text-white"
   },
 
@@ -87,7 +93,7 @@ export const defaultCards = [
     country: "CA",
     title: "Amazon Card",
     icon: Amazon,
-    bg: "bg-gradient-to-br from-blue-500 to-blue-600",
+    bg: "bg-[linear-gradient(146deg,#00E0FF_9.67%,#0047FF_107.49%)]",
     textColor: "text-white"
   },
 
@@ -96,7 +102,7 @@ export const defaultCards = [
     country: "CA",
     title: "iTunes Card",
     icon: Itunes,
-    bg: "bg-gradient-to-br from-pink-400 to-purple-500",
+    bg: "bg-[linear-gradient(142deg,#FF5E50_17.14%,#FE5C6C_33.69%,#E3658A_42.16%,#B87EB0_50.17%,#916CFF_58.79%,rgba(112,188,251,0.92)_67.83%,#21C7FE_83.6%)]",
     textColor: "text-white"
   },
 ];
