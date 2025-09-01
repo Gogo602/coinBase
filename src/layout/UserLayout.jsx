@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar";
 import AdminLayout from "./AdminLayout";
 import AgentLayout from "./AgentLayout";
 import RootLayout from "./RootLayout";
-import Overviews from "../pages/user/overview/Overviews";
+import UserOverview from "../pages/user/overview/UserOverview";
 
 export default function UserLayout() {
     const { userRole } = useParams();
@@ -37,7 +37,7 @@ export default function UserLayout() {
                         {userRole === 'user' && (
                              <>
                                 <Route path="" element={<RootLayout />} >
-                                    <Route index element={<Overviews />}/>
+                                    <Route index element={<UserOverview />}/>
                                     <Route path="trade" element={<h1>Trade</h1>}/>
                                 </Route>
                                 
