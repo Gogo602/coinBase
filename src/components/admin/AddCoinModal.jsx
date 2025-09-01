@@ -24,7 +24,7 @@ const AddCoinModal = ({ isOpen, onClose }) => {
   const addCoin = useBitCoinAndEthereumStore((state) => state.addCoin);
 
   const [title, setTitle] = useState("");
-  const [coinType, setCardType] = useState(coinTypes[0]);
+  const [coinType, setCoinType] = useState(coinTypes[0]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,7 +38,7 @@ const AddCoinModal = ({ isOpen, onClose }) => {
     });
 
     setTitle("");
-    setCardType(coinTypes[0]);
+    setCoinType(coinTypes[0]);
     onClose();
   };
 
@@ -71,7 +71,7 @@ const AddCoinModal = ({ isOpen, onClose }) => {
           <select
             value={coinType.name}
             onChange={(e) =>
-              setCardType(coinTypes.find((t) => t.name === e.target.value))
+              setCoinType(coinTypes.find((t) => t.name === e.target.value))
             }
             className="border rounded-md px-3 py-2 w-full"
           >
