@@ -8,7 +8,7 @@ export const useBitCoinAndEthereumStore = create(
   immer(
     persist(
       (set) => ({
-        cards: [
+        coins: [
           {
             id: 1,
             title: "Bitcoin",
@@ -26,14 +26,14 @@ export const useBitCoinAndEthereumStore = create(
           },
         ],
 
-        addCard: (newCard) =>
+        addCoin: (newCoin) =>
           set((state) => {
-            state.cards.push({ id: state.cards.length + 1, ...newCard });
+            state.coins.push({ id: state.coins.length + 1, ...newCoin });
           }),
 
-        removeCard: (id) =>
+        removeCoin: (id) =>
           set((state) => {
-            state.cards = state.cards.filter((card) => card.id !== id);
+            state.coins = state.coins.filter((coin) => coin.id !== id);
           }),
       }),
 
@@ -41,7 +41,7 @@ export const useBitCoinAndEthereumStore = create(
         name: "cryptoCard-storage",
         storage: localStorage,
         partialize: (state) => ({
-          cards: state.cards,
+          coins: state.coins,
         }),
       }
     )

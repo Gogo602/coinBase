@@ -5,18 +5,18 @@ import { Search, Triangle, Bitcoin } from "lucide-react";
 import { useMemo } from "react";
 
 const BitCoinAndEthereum = () => {
-  const cards = useBitCoinAndEthereumStore((state) => state.cards);
-  const removeCard = useBitCoinAndEthereumStore((state) => state.removeCard);
+  const coins = useBitCoinAndEthereumStore((state) => state.coins);
+  const removeCoin = useBitCoinAndEthereumStore((state) => state.removeCoin);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filter cards based on search term
+  // Filter coins based on search term
   const filteredCards = useMemo(() => {
-    if (!searchTerm) return cards;
-    return cards.filter((card) =>
+    if (!searchTerm) return coins;
+    return coins.filter((card) =>
       card.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
-  }, [searchTerm, cards]);
+  }, [searchTerm, coins]);
 
   return (
     <section className="bg-[#1E0338]">
@@ -57,7 +57,7 @@ const BitCoinAndEthereum = () => {
               />
             </div>
 
-            {/* Add Card Button */}
+            {/* Add Coin Button */}
             <button
               onClick={() => setIsModalOpen(true)}
               className="flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 to-indigo-600 text-white px-5 py-2 rounded-full font-medium hover:opacity-90 transition w-full sm:w-auto"
@@ -68,7 +68,7 @@ const BitCoinAndEthereum = () => {
           </div>
         </div>
 
-        {/* Cards Grid */}
+        {/* Coins Grid */}
         <div className="mt-16 border border-white rounded-xl p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredCards.map((card) => {
             return (
@@ -78,7 +78,7 @@ const BitCoinAndEthereum = () => {
               >
                 {/* Remove Button */}
                 <button
-                  onClick={() => removeCard(card.id)}
+                  onClick={() => removeCoin(card.id)}
                   className="absolute top-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition"
                 >
                   ✕

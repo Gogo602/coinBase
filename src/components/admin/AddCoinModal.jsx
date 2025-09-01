@@ -5,7 +5,7 @@ import { useBitCoinAndEthereumStore } from "../../store/admin/useBitcoinAndEther
 import Bitcoin from "../../assets/Bitcoin.svg";
 import Ethereum from "../../assets/Ethereum.svg";
 
-const cardTypes = [
+const coinTypes = [
   {
     name: "Bitcoin",
     icon: Bitcoin,
@@ -21,24 +21,24 @@ const cardTypes = [
 ];
 
 const AddCoinModal = ({ isOpen, onClose }) => {
-  const addCard = useBitCoinAndEthereumStore((state) => state.addCard);
+  const addCoin = useBitCoinAndEthereumStore((state) => state.addCoin);
 
   const [title, setTitle] = useState("");
-  const [cardType, setCardType] = useState(cardTypes[0]);
+  const [coinType, setCardType] = useState(coinTypes[0]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim()) return;
 
-    addCard({
+    addCoin({
       title,
-      icon: cardType.icon,
-      bg: cardType.bg,
-      textColor: cardType.textColor,
+      icon: coinType.icon,
+      bg: coinType.bg,
+      textColor: coinType.textColor,
     });
 
     setTitle("");
-    setCardType(cardTypes[0]);
+    setCardType(coinTypes[0]);
     onClose();
   };
 
@@ -69,13 +69,13 @@ const AddCoinModal = ({ isOpen, onClose }) => {
 
           {/* Card Type */}
           <select
-            value={cardType.name}
+            value={coinType.name}
             onChange={(e) =>
-              setCardType(cardTypes.find((t) => t.name === e.target.value))
+              setCardType(coinTypes.find((t) => t.name === e.target.value))
             }
             className="border rounded-md px-3 py-2 w-full"
           >
-            {cardTypes.map((type) => (
+            {coinTypes.map((type) => (
               <option key={type.name} value={type.name}>
                 {type.name}
               </option>
