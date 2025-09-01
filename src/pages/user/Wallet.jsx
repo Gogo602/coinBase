@@ -1,10 +1,12 @@
 import React from "react";
 import {assets} from "../../assets/assets";
+import UserManagement from "../../components/user/overview/UserManagement";
 
 const Wallet = () => {
   return (
-    <div className="mt-5">
-      <h1 className="mb-4 font-semibold text-lg">Wallet</h1>
+    <div className="py-15 px-5 min-h-screen bg-[#1E0338] ml-0 lg:ml-64 pt-25">
+      <UserManagement />
+      <h1 className="mb-4 font-semibold text-lg py-10">Wallet</h1>
       <div className="border border-white rounded-lg p-8 mt-10">
         <div className="flex justify-between mb-15">
           <h2 className="font-bold">Wallet</h2>

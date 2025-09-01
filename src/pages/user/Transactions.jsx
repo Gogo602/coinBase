@@ -1,13 +1,18 @@
 import { useState } from "react";
 import data from "../../assets/transactionData";
+import UserManagement from "../../components/user/overview/UserManagement";
 
 const Transactions = () => {
   const [view, setView] = useState(7);
+
   return (
-    <div
+    <div className="py-15 px-5 min-h-screen bg-[#1E0338] ml-0 lg:ml-64 pt-25">
+      <UserManagement />
+        <h1 className="mb-4 font-semibold text-lg py-10">Transactions</h1>
+      <div
       className="md:border border-white/70 rounded-lg p-4 overflow-x-auto min-w-0 max-h-[90vh] flex flex-col"
       style={{ scrollbarWidth: "none" }}
-    >
+      >
       <div
         className="overflow-y-scroll"
         style={{
@@ -71,6 +76,7 @@ const Transactions = () => {
           View more
         </button>
       </div>
+    </div>
     </div>
   );
 };

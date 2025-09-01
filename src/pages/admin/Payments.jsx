@@ -1,6 +1,6 @@
 import { useState } from "react";
 import data from "../../assets/PaymentsData";
-import PaymentItem from "./PaymentItem";
+import PaymentItem from "../../components/admin/PaymentItem";
 
 const Payments = () => {
   const [view, setView] = useState(7);

@@ -5,6 +5,9 @@ import AdminLayout from "./AdminLayout";
 import AgentLayout from "./AgentLayout";
 import RootLayout from "./RootLayout";
 import UserOverview from "../pages/user/overview/UserOverview";
+import Trade from "../pages/user/Trade";
+import Wallet from "../pages/user/Wallet";
+import Transactions from "../pages/user/Transactions";
 
 export default function UserLayout() {
     const { userRole } = useParams();
@@ -38,7 +41,9 @@ export default function UserLayout() {
                              <>
                                 <Route path="" element={<RootLayout />} >
                                     <Route index element={<UserOverview />}/>
-                                    <Route path="trade" element={<h1>Trade</h1>}/>
+                                    <Route path="trade" element={<Trade/>}/>
+                                    <Route path="wallet" element={<Wallet/>}/>
+                                    <Route path="transactions" element={<Transactions/>}/>
                                 </Route>
                                 
                             </>

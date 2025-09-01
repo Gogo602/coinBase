@@ -1,9 +1,11 @@
 import React from "react";
+import UserManagement from "../../components/user/overview/UserManagement";
 
 const Trade = () => {
   return (
-    <div>
-      <h1 className="mb-4 font-semibold text-lg">Trade</h1>
+    <div className="py-15 px-5 min-h-screen bg-[#1E0338] ml-0 lg:ml-64 pt-25">
+      <UserManagement />
+      <h1 className="mb-4 font-semibold text-lg py-10">Trade</h1>
       <div className="flex text-white border-white border-2 rounded-lg overflow-hidden h-[85vh]">
         <div className="side-1 hidden lg:flex border-r border-white md:w-70 flex flex-col justify-between">
           <div>
