@@ -13,7 +13,7 @@ const coinTypes = [
     textColor: "text-white",
   },
   {
-    name: "Bitcoin",
+    name: "Ethereum",
     icon: Ethereum,
     bg: "bg-[linear-gradient(146deg,#00E0FF_9.67%,#0047FF_107.49%)]",
     textColor: "text-white",
