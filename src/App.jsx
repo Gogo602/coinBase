@@ -2,12 +2,13 @@ import Cards from "./components/admin/Card";
 import BitCoinAndEthereum from "./components/admin/BitcoinAndEthereum";
 function App() {
   return (
-    <section className="">
-      <div className="">
-          <Cards />
-          <BitCoinAndEthereum />
+    <>
+      <div className="min-h-screen bg-[#1E0338] flex justify-center items-center">
+        <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold">
+          Welcome to Coin base
+        </h1>
       </div>
-    </section>
+    </>
   );
 }
 
