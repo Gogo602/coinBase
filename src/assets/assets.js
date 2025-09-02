@@ -1,6 +1,7 @@
 import trophy from "./trophy.png";
 
-export const assets = {
+const assets = {
   trophy,
 };
-export default { assets };
+
+export default assets;
