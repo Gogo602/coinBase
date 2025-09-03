@@ -1,5 +1,4 @@
 import { Route, Routes, useParams } from "react-router-dom";
-import Sample from "../components/Agent/Sample";
 import Sidebar from "../components/Sidebar";
 import AdminLayout from "./AdminLayout";
 import AgentLayout from "./AgentLayout";
@@ -12,6 +11,7 @@ import OverviewPage from "../pages/agent/overview/OverviewPage";
 import Payments from '../pages/admin/Payments'
 import Cards from "../pages/admin/Card";
 import BitCoinAndEthereum from "../pages/admin/BitcoinAndEthereum";
+import Sample from "../pages/agent/Sample";
 
 export default function UserLayout() {
     const { userRole } = useParams();
