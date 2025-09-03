@@ -11,7 +11,7 @@ export default function overview() {
                 <h1 className="text-xl"> Overview</h1>
                 <FaCalendarCheck className="w-7 h-7 text-gray-300"/>
             </div>
-            <div className="grid grid-cols-1 mt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 mt-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {userOverviewCardData.map((item) => (
                     <div key={item.id}>
                         <OverViewCard 
