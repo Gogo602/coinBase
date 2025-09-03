@@ -1,9 +1,19 @@
 import trophy from "./trophy.png";
 import coinBaseLogo from "./coinBaseLogo.png";
+import Vector from './Vector.png'
+import Element01 from './Element01.png'
+import Element02 from './Element02.png'
+import Element03 from './Element03.png'
+import Element04 from './Element04.png'
 
 export const assets = {
-  trophy,
-  coinBaseLogo,
+    trophy,
+    coinBaseLogo,
+    Vector,
+    Element01,
+    Element02, 
+    Element03,  
+    Element04,
 };
 
 export const userOverviewCardData = [

@@ -1,10 +1,6 @@
 import React from 'react'
-import  Trophy  from '../../../assets/Trophy.png'
-import Vector from '../../../assets/Vector.png'
-import Element01 from '../../../assets/Element01.png'
-import Element02 from '../../../assets/Element02.png'
-import Element03 from '../../../assets/Element03.png'
-import Element04 from '../../../assets/Element04.png'
+import { assets } from '../../../assets/assets'
+
 
 const OverviewWallet = () => {
   return (
@@ -20,7 +16,7 @@ const OverviewWallet = () => {
             </div>
             <div className='justify-between align-center gap-10 grid grid-cols-1 md:grid-cols-3'>
                 <div className=''>
-                    <img src={Trophy} alt="Trophy" height={300} width={200} className='pb-10' />
+                    <img src={assets.trophy} alt="Trophy" height={300} width={200} className='pb-10' />
                 </div>
                 <div className='mt-8'>
                     <span className='rounded-full text-xs px-4 py-2 bg-gradient-to-br from-[#FD749B] to-[#FEAE68]'>
@@ -39,12 +35,12 @@ const OverviewWallet = () => {
                 </div>
             </div>
             <div>
-                <img src={Vector} alt="" className=' absolute bottom-0 left-0'/>
-                <img src={Element01} alt="" className='absolute right-12 bottom-7' />
-                <img src={Element02} alt="" className='absolute left-0 '/>
-                <img src={Element03} alt="" className='absolute left-5 top-6' />
-                <img src={Element04} alt="" className='absolute top-6 left-32' />
-                <img src={Element01} alt="" className='absolute top-5 right-8 transform rotate-30' />
+                <img src={assets.Vector} alt="" className=' absolute bottom-0 left-0'/>
+                <img src={assets.Element01} alt="" className='absolute right-12 bottom-7' />
+                <img src={assets.Element02} alt="" className='absolute left-0 '/>
+                <img src={assets.Element03} alt="" className='absolute left-5 top-6' />
+                <img src={assets.Element04} alt="" className='absolute top-6 left-32' />
+                <img src={assets.Element01} alt="" className='absolute top-5 right-8 transform rotate-30' />
             </div>
                 
             
