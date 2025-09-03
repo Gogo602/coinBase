@@ -23,7 +23,7 @@ const Sidebar = () => {
     const currentLinks = sidebarData[userRole] || [];
 
     return (
-        <div className='mt-14'>
+        <div className='mt-15 z-999'>
             {/* The mobile menu toggle button, visible only on small screens. */}
             <div className="lg:hidden fixed top-3 right-3 z-40">
                 <FaBars

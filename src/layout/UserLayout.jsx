@@ -8,6 +8,7 @@ import UserOverview from "../pages/user/overview/UserOverview";
 import Trade from "../pages/user/Trade";
 import Wallet from "../pages/user/Wallet";
 import Transactions from "../pages/user/Transactions";
+import OverviewPage from "../pages/agent/overview/OverviewPage";
 
 export default function UserLayout() {
     const { userRole } = useParams();
@@ -30,7 +31,7 @@ export default function UserLayout() {
                         {userRole === 'agent' && (
                             <>
                                 <Route path="" element={<AgentLayout />} >
-                                    <Route index element={<Sample/>}/>
+                                    <Route index element={<OverviewPage/>}/>
                                     <Route path="user" element={<Sample/>}/>
                                     <Route path="trade" element={<Sample/>}/>
                                 </Route> 
