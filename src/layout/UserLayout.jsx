@@ -38,8 +38,6 @@ export default function UserLayout() {
                             <>
                                 <Route path="" element={<AgentLayout />} >
                                     <Route index element={<OverviewPage/>}/>
-                                    <Route path="user" element={<Sample/>}/>
-                                    <Route path="trade" element={<Sample/>}/>
                                 </Route> 
                             </>
                         )}
