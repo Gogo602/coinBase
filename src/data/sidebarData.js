@@ -22,7 +22,7 @@ export const sidebarData = {
         { to: '/agent/settings', label: 'Settings', icon: FaCog },
     ],
     admin: [
-        { to: '/admin', label: 'Dashboard', icon: FaEye },
+        { to: '/admin', label: 'Overview', icon: FaEye },
         { to: '/admin/users', label: 'Users', icon: FaCog },
         { to: '/admin/agents', label: 'Agent', icon: BiBarChart },
         { to: '/admin/cards', label: 'Cards', icon: BiBarChart },

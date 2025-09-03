@@ -1,9 +1,21 @@
 import trophy from "./trophy.png";
 import coinBaseLogo from "./coinBaseLogo.png";
+import admintrans from "./admintrans.png";
+import stem from "./stem.png";
+import others from "./others.png";
+import googleplay from "./googleplay.png";
+import itunes from "./itunes.png";
+import amazon from "./amazon.png";
 
 export const assets = {
-  trophy,
-  coinBaseLogo,
+    trophy,
+    coinBaseLogo,
+    admintrans,
+    stem,
+    others,
+    googleplay,
+    itunes,
+    amazon
 };
 
 export const userOverviewCardData = [
