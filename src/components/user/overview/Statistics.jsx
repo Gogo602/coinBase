@@ -1,5 +1,5 @@
 import { HiDotsHorizontal } from "react-icons/hi";
-import UserBarChart from "./userBarChart";
+import UserBarChart from '../overview/UserBarChart'
 
 
 export default function Statistics() {
