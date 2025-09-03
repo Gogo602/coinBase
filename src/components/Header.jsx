@@ -5,7 +5,7 @@ import { MdOutlineNotificationsNone } from "react-icons/md";
 export default function Header(){
 
     return(
-        <div className="h-[60px] w-full fixed top-0 left-0 bg-[#1E0338] border-b border-gray-300 flex items-center px-4 justify-between z-10">
+        <div className="h-[60px] w-full fixed top-0 left-0 bg-[#1E0338] border-b border-gray-300 flex items-center px-4 justify-between z-999">
             <div className="px-10 flex items-center justify-between w-full">
                  <img src={assets.coinBaseLogo} alt="coinbase_img" />
                 <div className="hidden md:flex items-center justify-between space-x-8">

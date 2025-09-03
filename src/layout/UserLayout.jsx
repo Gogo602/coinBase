@@ -27,7 +27,8 @@ export default function UserLayout() {
                             <>
                                 <Route path="" element={<AdminLayout />} >
                                     <Route index element={<Sample/>}/>
-                                    <Route path='cards' element={<Cards/>}/>
+                                    <Route path='cards' element={<Cards />} />
+                                    <Route path="transactions" element={<Transactions/>}/>
                                     <Route path='bitcoin-ethereum' element={<BitCoinAndEthereum/>}/>
                                     <Route path='payments' element={<Payments/>}/>
                                 </Route>
@@ -37,7 +38,10 @@ export default function UserLayout() {
                         {userRole === 'agent' && (
                             <>
                                 <Route path="" element={<AgentLayout />} >
-                                    <Route index element={<OverviewPage/>}/>
+                                    <Route index element={<OverviewPage />} />
+                                    <Route path="trade" element={<Trade/>}/>
+                                    <Route path="wallet" element={<Wallet/>}/>
+                                    <Route path="transactions" element={<Transactions/>}/>
                                 </Route> 
                             </>
                         )}
@@ -50,7 +54,6 @@ export default function UserLayout() {
                                     <Route path="wallet" element={<Wallet/>}/>
                                     <Route path="transactions" element={<Transactions/>}/>
                                 </Route>
-                                
                             </>
                         )}
                     </Routes>

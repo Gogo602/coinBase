@@ -7,7 +7,6 @@ const Payments = () => {
   return (
     <div
       className="py-15 px-5 min-h-screen bg-[#1E0338] ml-0 lg:ml-64 pt-25 md:border border-white/70 rounded-lg p-4 overflow-x-auto min-w-0 max-h-[90vh] flex flex-col"
-      style={{ scrollbarWidth: "none" }}
     >
       <div
         className="overflow-y-scroll"

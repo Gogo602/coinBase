@@ -3,7 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 
 export default function Mobile({ links, activeClass, inactiveClass, isActive, setShowMobileMenu }) {
     return (
-        <div className="fixed inset-0 bg-[#1E0338]/50 z-40">
+        <div className="fixed inset-0 bg-[#1E0338]/50 z-999 min-h-screen">
              <div className="bg-[#1E0338] min-h-screen fixed px-4 w-64 border-r border-gray-300 z-50">
                  {/* Close button */}
                  <div className="flex justify-end p-4">
