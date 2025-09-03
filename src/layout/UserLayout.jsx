@@ -9,6 +9,9 @@ import Trade from "../pages/user/Trade";
 import Wallet from "../pages/user/Wallet";
 import Transactions from "../pages/user/Transactions";
 import OverviewPage from "../pages/agent/overview/OverviewPage";
+import Payments from '../pages/admin/Payments'
+import Cards from "../pages/admin/Card";
+import BitCoinAndEthereum from "../pages/admin/BitcoinAndEthereum";
 
 export default function UserLayout() {
     const { userRole } = useParams();
@@ -23,7 +26,10 @@ export default function UserLayout() {
                         {userRole === 'admin' && (
                             <>
                                 <Route path="" element={<AdminLayout />} >
-                                
+                                    <Route index element={<Sample/>}/>
+                                    <Route path='cards' element={<Cards/>}/>
+                                    <Route path='bitcoin-ethereum' element={<BitCoinAndEthereum/>}/>
+                                    <Route path='payments' element={<Payments/>}/>
                                 </Route>
                             </>
                         )}
