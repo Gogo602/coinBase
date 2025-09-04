@@ -2,7 +2,7 @@ import { assets } from "../../../assets/assets";
 
 
 
-export default function Transactions() {
+export default function Transaction() {
 
 
     return (

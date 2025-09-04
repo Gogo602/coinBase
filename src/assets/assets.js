@@ -166,3 +166,69 @@ export const userTransactions = [
         action: "...."
     }
 ]    
+
+export const Users = [
+    {
+        id: 1,
+        status: "Active",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    },
+    {
+        id: 2,
+        status: "Down",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    },
+    {
+        id: 3,
+        status: "Active",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    },
+    {
+        id: 4,
+        status: "Pending",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    },
+    {
+        id: 5,
+        status: "Down",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    }
+]
+
+export const Agents = [
+    {
+        id: 1,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    },
+    {
+        id: 2,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    },
+    {
+        id: 3,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    },
+    {
+        id: 4,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    },
+    {
+        id: 5,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    }
+]
