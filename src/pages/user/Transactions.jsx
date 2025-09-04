@@ -9,7 +9,7 @@ const Transactions = () => {
     <div className="py-15 px-5 h-screen overflow-hidden bg-[#1E0338] ml-0 lg:ml-64 pt-25">
       <UserManagement />
       <h1 className="font-semibold text-lg py-10">Transactions</h1>
-      <div className="border md:border border-white/70 rounded-lg p-4 pb-0 overflow-x-auto min-w-0 h-85/100 overflow-y-hidden flex flex-col">
+      <div className="md:border border-white/70 rounded-lg p-4 pb-0 overflow-x-auto min-w-0 h-85/100 overflow-y-hidden flex flex-col">
         <div className="h-8/10 ">
           {/* Header Row */}
           <div className="text-xs grid grid-cols-6 md:grid-cols-8 gap-5 mb-1 px-2">
