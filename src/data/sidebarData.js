@@ -14,7 +14,7 @@ export const sidebarData = {
     ],
     agent: [
         { to: '/agent', label: 'Overview', icon: FaEye },
-        { to: '/agent/user', label: 'User', icon: FaEye },
+        { to: '/agent/users', label: 'User', icon: FaEye },
         { to: '/agent/trade', label: 'Trade', icon: HiOutlineChatAlt2 },
         { to: '/agent/wallet', label: 'Wallet', icon: FaWallet },
         { to: '/agent/transactions', label: 'Transactions', icon: AiOutlineTransaction },
@@ -22,7 +22,7 @@ export const sidebarData = {
         { to: '/agent/settings', label: 'Settings', icon: FaCog },
     ],
     admin: [
-        { to: '/admin', label: 'Dashboard', icon: FaEye },
+        { to: '/admin', label: 'Overview', icon: FaEye },
         { to: '/admin/users', label: 'Users', icon: FaCog },
         { to: '/admin/agents', label: 'Agent', icon: BiBarChart },
         { to: '/admin/cards', label: 'Cards', icon: BiBarChart },

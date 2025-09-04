@@ -1,9 +1,21 @@
 import trophy from "./trophy.png";
 import coinBaseLogo from "./coinBaseLogo.png";
+import admintrans from "./admintrans.png";
+import stem from "./stem.png";
+import others from "./others.png";
+import googleplay from "./googleplay.png";
+import itunes from "./itunes.png";
+import amazon from "./amazon.png";
 
 export const assets = {
-  trophy,
-  coinBaseLogo,
+    trophy,
+    coinBaseLogo,
+    admintrans,
+    stem,
+    others,
+    googleplay,
+    itunes,
+    amazon
 };
 
 export const userOverviewCardData = [
@@ -154,3 +166,69 @@ export const userTransactions = [
         action: "...."
     }
 ]    
+
+export const Users = [
+    {
+        id: 1,
+        status: "Active",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    },
+    {
+        id: 2,
+        status: "Down",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    },
+    {
+        id: 3,
+        status: "Active",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    },
+    {
+        id: 4,
+        status: "Pending",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    },
+    {
+        id: 5,
+        status: "Down",
+        username: 'Raman Ridwan',
+        email: "Ramonridwan@protonmail.com"
+    }
+]
+
+export const Agents = [
+    {
+        id: 1,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    },
+    {
+        id: 2,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    },
+    {
+        id: 3,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    },
+    {
+        id: 4,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    },
+    {
+        id: 5,
+        status: "Active",
+        username: 'Quadri Lawal',
+        email: "Quaderilawal@protonmail.com"
+    }
+]

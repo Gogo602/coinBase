@@ -12,6 +12,9 @@ import OverviewPage from "../pages/agent/overview/OverviewPage";
 import Payments from '../pages/admin/Payments'
 import Cards from "../pages/admin/Card";
 import BitCoinAndEthereum from "../pages/admin/BitcoinAndEthereum";
+import AdminOverview from "../pages/admin/overview/AdminOverview";
+import Users from "../pages/admin/Users";
+import Agent from "../pages/agent/Agents";
 
 export default function UserLayout() {
     const { userRole } = useParams();
@@ -19,17 +22,20 @@ export default function UserLayout() {
     return (
         <div className='flex'>
             <Sidebar />
-            <div className='grow h-full lg:h-full bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white'>
+            <div className='grow h-full lg:h-full'>
                 <div className="">
                     <Routes>
                         {/* Define nested routes for each user role's pages */}
                         {userRole === 'admin' && (
                             <>
                                 <Route path="" element={<AdminLayout />} >
-                                    <Route index element={<Sample/>}/>
+                                    <Route index element={<AdminOverview />} />
                                     <Route path='cards' element={<Cards/>}/>
                                     <Route path='bitcoin-ethereum' element={<BitCoinAndEthereum/>}/>
-                                    <Route path='payments' element={<Payments/>}/>
+                                    <Route path='payments' element={<Payments />} />
+                                    <Route path='users' element={<Users />} />
+                                    <Route path='agents' element={<Agent />} />
+                                    <Route path="transactions" element={<Transactions />} />
                                 </Route>
                             </>
                         )}
@@ -38,8 +44,11 @@ export default function UserLayout() {
                             <>
                                 <Route path="" element={<AgentLayout />} >
                                     <Route index element={<OverviewPage/>}/>
-                                    <Route path="user" element={<Sample/>}/>
-                                    <Route path="trade" element={<Sample/>}/>
+                                    <Route path="trade" element={<Trade />} />
+                                    <Route path='users' element={<Users />} />
+                                    <Route path="transactions" element={<Transactions />} />
+                                    <Route path="wallet" element={<Wallet/>}/>
+
                                 </Route> 
                             </>
                         )}
@@ -52,7 +61,6 @@ export default function UserLayout() {
                                     <Route path="wallet" element={<Wallet/>}/>
                                     <Route path="transactions" element={<Transactions/>}/>
                                 </Route>
-                                
                             </>
                         )}
                     </Routes>

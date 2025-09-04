@@ -9,8 +9,9 @@ const Payments = () => {
       className="py-15 px-5 min-h-screen bg-[#1E0338] ml-0 lg:ml-64 pt-25 md:border border-white/70 rounded-lg p-4 overflow-x-auto min-w-0 max-h-[90vh] flex flex-col"
       style={{ scrollbarWidth: "none" }}
     >
+        <h1 className="mb-4 font-semibold text-lg py-5">Payments</h1>
       <div
-        className="overflow-y-scroll"
+        className="overflow-y-scroll mt-10"
         style={{
           scrollbarWidth: "thin",
           scrollbarColor: "rgba(255, 255, 255, 0.5) transparent",

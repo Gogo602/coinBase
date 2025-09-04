@@ -41,6 +41,11 @@ export default function Transactions(){
                     ))}
                     
                 </div>
+                <div className="flex items-center justify-center w-full py-5">
+                    <button className="bg-gradient-to-b from-[#FD749B] to-[#281AC8] px-6 py-3 rounded-full">
+                        view more
+                    </button>
+                </div>
             </div>
         </div>
     )
