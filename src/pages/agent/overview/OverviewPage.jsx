@@ -36,6 +36,9 @@ const clipPathPolygon = 'polygon(41% 21%, 56% 15%, 59% 28%, 65% 32%, 69% 33%, 68
             </span>
         </div>
 
+        <div className="grid">
+
+
        {/** Overview Cards */}
        <OverviewCards />
 
@@ -51,6 +54,7 @@ const clipPathPolygon = 'polygon(41% 21%, 56% 15%, 59% 28%, 65% 32%, 69% 33%, 68
 
         {/* Transactions */}
         <OverviewTransactions/>
+        </div>
         </div>
     </div>
   )
