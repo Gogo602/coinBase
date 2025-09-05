@@ -38,20 +38,20 @@ const OverviewPage = () => {
             </span>
         </div>
 
-       <Overview />
+            <Overview />
 
-       {/* Conversion */}
-       <Conversion />
+            {/* Conversion */}
+            <Conversion />
 
 
-        {/* Wallet Section */}
-       <Wallet/>
+            {/* Wallet Section */}
+            <Wallet/>
 
-        {/* Statistics */}
-       <OverviewStatistics />
+            {/* Statistics */}
+            <OverviewStatistics />
 
-        {/* Transactions */}
-        <OverviewTransactions/>
+            {/* Transactions */}
+            <OverviewTransactions/>
         </div>
     </div>
   )

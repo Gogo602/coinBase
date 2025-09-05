@@ -7,7 +7,7 @@ import Areas from './Area';
 export default function OverViewCard({title, percentage, Completion}){
 
     return(
-        <div className="border-2 border-white rounded-md ">
+        <div className="border border-white/80 rounded-md ">
             <div className="p-2">
                 <div className="flex items-center justify-between">
                     <p>{""}</p>

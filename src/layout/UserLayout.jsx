@@ -20,7 +20,7 @@ export default function UserLayout() {
     const { userRole } = useParams();
 
     return (
-        <div className='flex'>
+        <div className='flex w-screen h-screen bg-[#1E0338]'>
             <Sidebar />
             <div className='grow h-full lg:h-full text-white'>
                 <div className="">
