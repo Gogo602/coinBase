@@ -1,21 +1,23 @@
 import { Chart as ChartJS, Tooltip as ChartTooltip, Legend as ChartLegend, CategoryScale, registerables } from 'chart.js'
 ChartJS.register(...registerables)
 import {CalendarCheck} from 'lucide-react'
-import OverviewCards from '../../../components/agent/overview/OverviewCards'
-import OverviewConversion from '../../../components/agent/overview/OverviewConversion'
+import Conversion from "../../../components/user/overview/Conversion";
 import OverviewStatistics from '../../../components/agent/overview/OverviewStatistics'
 import OverviewWallet from '../../../components/agent/overview/OverviewWallet'
 import OverviewTransactions from '../../../components/agent/overview/OverviewTransactions'
+import Overview from "../../../components/user/overview/Overview";
+import Wallet from "../../../components/user/overview/Wallet";
+
 
 const OverviewPage = () => {
 
-const clipPathPolygon = 'polygon(41% 21%, 56% 15%, 59% 28%, 65% 32%, 69% 33%, 68% 39%, 71% 48%, 71% 53%, 74% 65%, 74% 74%, 65% 75%, 59% 74%, 56% 80%, 53% 86%, 45% 83%, 37% 76%)';
+
  
   return (
-    <div className='font-poppins py-15 px-5 min-h-screen bg-[#1E0338] ml-0 lg:ml-64 pt-25'>
+    <div className='font-poppins py-15 min-h-screen bg-[#1E0338] ml-0 lg:ml-64 pt-25'>
         {/* Main Content */}
         
-        <div className='md:px-20 px-4'>
+        <div className='md:px-20 px-5'>
          <div className='flex justify-between items-center p-4 text-white font-bold text-xs md:text-md font-poppins' >
             <span> <h3 className='mt-2'> User Management System Overview</h3></span>
             <span className='flex whitespace-nowrap'>
@@ -36,15 +38,14 @@ const clipPathPolygon = 'polygon(41% 21%, 56% 15%, 59% 28%, 65% 32%, 69% 33%, 68
             </span>
         </div>
 
-       {/** Overview Cards */}
-       <OverviewCards />
+       <Overview />
 
        {/* Conversion */}
-       <OverviewConversion />
+       <Conversion />
 
 
         {/* Wallet Section */}
-       <OverviewWallet/>
+       <Wallet/>
 
         {/* Statistics */}
        <OverviewStatistics />

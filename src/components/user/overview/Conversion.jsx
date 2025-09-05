@@ -9,13 +9,13 @@ export default function Conversion() {
     
     return (
         <div className="border-2 border-white rounded-md mt-10">
-            <div className="p-10 space-y-10">
+            <div className="py-10 px-5 space-y-10 lg:px-10">
                 <div className="flex items-center justify-between">
                     <h3 className="text-xl font-bold">Conversion Rate to Naira</h3>
                     <HiDotsHorizontal className="w-6 h-6"/>
                 </div>
                 
-                <ul className="flex items-center justify=between space-x-20">
+                <ul className="flex items-center justify-between space-x-5 sm:space-x-7 lg:space-x-20">
                     <li className="grid grid-cols-1 gap-y-10 w-full gap-x-15 sm:grid-cols-2 md:grid-cols-3">
                         {userConversionData.map((data) => (
                             <div
@@ -26,7 +26,7 @@ export default function Conversion() {
                                 {data.cards.map((card) => (
                                     <div
                                         key={card.id}
-                                        className="flex items-center justify-between w-full text-[14px]">
+                                        className="flex items-center justify-between w-full text-[12px]">
                                         <p>{card.type}</p>
                                         <p>{card.price}</p>
                                     </div>

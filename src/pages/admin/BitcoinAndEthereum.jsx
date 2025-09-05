@@ -19,8 +19,8 @@ const BitCoinAndEthereum = () => {
   }, [searchTerm, coins]);
 
   return (
-    <section className="px-5 min-h-screen bg-[#1E0338] ml-0 lg:ml-64">
-      <div className="container mx-auto px-4 py-10">
+    <section className="min-h-[110vh] bg-[#1E0338] ml-0 lg:ml-64">
+      <div className="container mx-auto px-5 py-10 sm:px-10">
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white text-sm font-bold text-center sm:text-left">
@@ -69,7 +69,7 @@ const BitCoinAndEthereum = () => {
         </div>
 
         {/* Coins Grid */}
-        <div className="mt-16 border border-white rounded-xl p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="mt-16 border border-white rounded-xl py-10 px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:px-10">
           {filteredCards.map((card) => {
             return (
               <div

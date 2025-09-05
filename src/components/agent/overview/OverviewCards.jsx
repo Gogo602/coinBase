@@ -32,7 +32,7 @@ const dataRecharts = [
 
   return (
     <div>
-         <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-5'>
+         <div className='grid grid-cols-1 md:grid-cols-3 mt-5'>
             <div className='border text-white rounded-md'>
                 <div className='flex justify-end pt-2 pr-2 relative'><Ellipsis onClick={() => toggleVisibility('button1')} />
                 {activeButton === 'button1' && isVisible && (

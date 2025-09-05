@@ -4,14 +4,14 @@ import { assets } from "../../../assets/assets";
 
 export default function Wallet() {
   return (
-      <div className="border border-white rounded-lg p-8 mt-10">
+      <div className="border border-white rounded-lg py-8 px-5 mt-10 sm>px-8">
         <div className="flex justify-between">
           <h2 className="font-bold text-[18px]">Wallet</h2>
           <button className="py-3 px-6 bg-white text-[#FD749B] hover:bg-white/90 text-[10px] rounded-full cursor-pointer">
             Withdraw funds
           </button>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-15 w-full place-items-center overflow-x-hidden py-5 px-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-15 w-full place-items-center overflow-x-hidden py-5 px-5 sm:px-10">
           <div className="flex justify-center items-center mx-auto">
             <img src={assets.trophy} alt="" className="h-50" />
           </div>

@@ -1,12 +1,12 @@
 import { HiDotsHorizontal } from "react-icons/hi";
-import { Agents } from "../../../assets/assets";
+import { agentData } from "../../../assets/assets";
 
 
-export default function Agent(){
+export default function Agents(){
 
     return (
         <div className="border-2 border-white rounded-md mt-10 h-full w-full">
-            <div className="p-10 space-y-10">
+            <div className="py-10 px-3 space-y-10 sm:px-10">
                 <div className="flex items-center justify-between">
                     <h3 className="text-xl font-bold">Agents</h3>
                     <HiDotsHorizontal className="w-6 h-6"/>
@@ -18,7 +18,7 @@ export default function Agent(){
                         <span className="hidden md:inline-block">Email</span>
                         <span>Action</span>
                     </div>
-                    {Agents.map((item) => (
+                    {agentData.map((item) => (
                         <div
                             key={item.id}
                             className="flex items-center justify-between font-bold border border-white rounded-full px-5 py-3"
@@ -32,7 +32,7 @@ export default function Agent(){
                     </div>
                     ))}
                 </div>
-                <div className="flex items-center justify-center w-full py-5">
+                <div className="flex items-center justify-center w-full">
                     <button className="bg-gradient-to-b from-[#FD749B] to-[#281AC8] px-6 py-3 rounded-full">
                         view more
                     </button>

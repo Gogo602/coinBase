@@ -210,7 +210,7 @@ export const Users = [
     }
 ]
 
-export const Agents = [
+export const agentData = [
     {
         id: 1,
         status: "Active",
